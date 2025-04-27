@@ -38,12 +38,12 @@ You can also export your step count via SMS.
 
 ## 🛠 Architecture
 
-- **PedometerManager (ObservableObject)** → handles motion updates & publishes steps.
-- **DBManager (singleton)** → wraps SQLite, stores & retrieves (count, timestamp) records.
-- **ContentView** → main UI, SMS export, navigation.
-- **HistoryView** → SwiftUI List of all records.
-- **StepChartView** → Charts‐based visualization with filters.
-- **MessagingManager** → wraps MFMessageComposeViewController for SMS.
+- `PedometerManager` (ObservableObject) → handles motion updates & publishes `steps`.
+- `DBManager` (singleton) → wraps SQLite, stores & retrieves `(count, timestamp)`` records.
+- `ContentView` → main UI, SMS export, navigation.
+- `HistoryView` → SwiftUI `List` of all records.
+- `StepChartView` → `Charts`‐based visualization with filters.
+- `MessagingManager` → wraps `MFMessageComposeViewController` for SMS.
 
 
  ## 📄 License
