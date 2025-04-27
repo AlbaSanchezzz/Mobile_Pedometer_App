@@ -1,5 +1,7 @@
 import SwiftUI
 import CoreMotion
+import Charts
+
 
 @main
 struct StepCounterApp: App {

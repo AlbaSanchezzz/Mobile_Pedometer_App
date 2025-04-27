@@ -19,6 +19,7 @@
 		65545CCF2DBECE34008434C3 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65545CCE2DBECE34008434C3 /* DBManager.swift */; };
 		65545CD12DBECF2E008434C3 /* MessagingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65545CD02DBECF2E008434C3 /* MessagingManager.swift */; };
 		65545CD32DBED34F008434C3 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65545CD22DBED34F008434C3 /* HistoryView.swift */; };
+		65AAF5F32DBEDB6B000D5D1F /* StepChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAF5F22DBEDB6B000D5D1F /* StepChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		65545CCE2DBECE34008434C3 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		65545CD02DBECF2E008434C3 /* MessagingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingManager.swift; sourceTree = "<group>"; };
 		65545CD22DBED34F008434C3 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		65AAF5F22DBEDB6B000D5D1F /* StepChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				65085F3A2DBE97E20010F35C /* Preview Content */,
 				65085F5E2DBE99560010F35C /* PedometerManager.swift */,
 				65545CD22DBED34F008434C3 /* HistoryView.swift */,
+				65AAF5F22DBEDB6B000D5D1F /* StepChartView.swift */,
 			);
 			path = "Mobile Podometer App";
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65AAF5F32DBEDB6B000D5D1F /* StepChartView.swift in Sources */,
 				65085F5F2DBE99560010F35C /* PedometerManager.swift in Sources */,
 				65545CD32DBED34F008434C3 /* HistoryView.swift in Sources */,
 				65085F352DBE97DE0010F35C /* ContentView.swift in Sources */,

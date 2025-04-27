@@ -26,8 +26,7 @@ struct ContentView: View {
                 .background(Color.blue.opacity(0.2))
                 .cornerRadius(8)
 
-                Divider()
-                    .padding(.vertical)
+                Divider().padding(.vertical)
 
                 // Phone number input
                 TextField("Phone Number", text: $phoneNumber)
@@ -64,11 +63,18 @@ struct ContentView: View {
                 .background(Color.gray.opacity(0.2))
                 .cornerRadius(8)
 
-                // Navigation to the on‐screen history list
+                // Navigate to on-screen history list
                 NavigationLink("Show Step History", destination: HistoryView())
                     .padding(.horizontal, 24)
                     .padding(.vertical, 12)
                     .background(Color.purple.opacity(0.2))
+                    .cornerRadius(8)
+
+                // Navigate to chart view
+                NavigationLink("Show Steps Chart", destination: StepChartView())
+                    .padding(.horizontal, 24)
+                    .padding(.vertical, 12)
+                    .background(Color.orange.opacity(0.2))
                     .cornerRadius(8)
 
                 Spacer()
@@ -78,3 +84,4 @@ struct ContentView: View {
         }
     }
 }
+
