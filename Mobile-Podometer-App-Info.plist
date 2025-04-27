@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+   "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Identifiers -->
+    <key>CFBundleIdentifier</key>
+    <string>com.alba.StepCounterApp</string>
+    <key>CFBundleName</key>
+    <string>StepCounterApp</string>
+
+    <!-- Versioning -->
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- iOS requirements -->
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+
+    <!-- Motion & Fitness permission -->
+    <key>NSMotionUsageDescription</key>
+    <string>This app uses motion sensors to count your steps.</string>
+</dict>
+</plist>

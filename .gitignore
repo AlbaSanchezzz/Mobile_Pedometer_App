@@ -1,0 +1,9 @@
+# Xcode
+build/
+DerivedData/
+*.xcworkspace
+!Podfile
+# Swift Package Manager
+.build/
+# Cartera de llaveros, configuración local  
+*.xcuserstate

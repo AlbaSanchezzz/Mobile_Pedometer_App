@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65085F332DBE97DE0010F35C /* StepCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65085F322DBE97DE0010F35C /* StepCounterApp.swift */; };
+		65085F352DBE97DE0010F35C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65085F342DBE97DE0010F35C /* ContentView.swift */; };
+		65085F392DBE97E20010F35C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65085F382DBE97E20010F35C /* Assets.xcassets */; };
+		65085F3C2DBE97E20010F35C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65085F3B2DBE97E20010F35C /* Preview Assets.xcassets */; };
+		65085F462DBE97E20010F35C /* Mobile_Podometer_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65085F452DBE97E20010F35C /* Mobile_Podometer_AppTests.swift */; };
+		65085F502DBE97E30010F35C /* Mobile_Podometer_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65085F4F2DBE97E30010F35C /* Mobile_Podometer_AppUITests.swift */; };
+		65085F522DBE97E30010F35C /* Mobile_Podometer_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65085F512DBE97E30010F35C /* Mobile_Podometer_AppUITestsLaunchTests.swift */; };
+		65085F5F2DBE99560010F35C /* PedometerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65085F5E2DBE99560010F35C /* PedometerManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65085F422DBE97E20010F35C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65085F272DBE97DE0010F35C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65085F2E2DBE97DE0010F35C;
+			remoteInfo = "Mobile Podometer App";
+		};
+		65085F4C2DBE97E30010F35C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65085F272DBE97DE0010F35C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65085F2E2DBE97DE0010F35C;
+			remoteInfo = "Mobile Podometer App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65085F2F2DBE97DE0010F35C /* Mobile Podometer App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Podometer App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65085F322DBE97DE0010F35C /* StepCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterApp.swift; sourceTree = "<group>"; };
+		65085F342DBE97DE0010F35C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		65085F382DBE97E20010F35C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65085F3B2DBE97E20010F35C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65085F412DBE97E20010F35C /* Mobile Podometer AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Podometer AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65085F452DBE97E20010F35C /* Mobile_Podometer_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Podometer_AppTests.swift; sourceTree = "<group>"; };
+		65085F4B2DBE97E30010F35C /* Mobile Podometer AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Podometer AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65085F4F2DBE97E30010F35C /* Mobile_Podometer_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Podometer_AppUITests.swift; sourceTree = "<group>"; };
+		65085F512DBE97E30010F35C /* Mobile_Podometer_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Podometer_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		65085F5E2DBE99560010F35C /* PedometerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerManager.swift; sourceTree = "<group>"; };
+		65085F602DBE9C900010F35C /* Mobile-Podometer-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Mobile-Podometer-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65085F2C2DBE97DE0010F35C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65085F3E2DBE97E20010F35C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65085F482DBE97E30010F35C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65085F262DBE97DE0010F35C = {
+			isa = PBXGroup;
+			children = (
+				65085F312DBE97DE0010F35C /* Mobile Podometer App */,
+				65085F442DBE97E20010F35C /* Mobile Podometer AppTests */,
+				65085F4E2DBE97E30010F35C /* Mobile Podometer AppUITests */,
+				65085F302DBE97DE0010F35C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65085F302DBE97DE0010F35C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65085F2F2DBE97DE0010F35C /* Mobile Podometer App.app */,
+				65085F412DBE97E20010F35C /* Mobile Podometer AppTests.xctest */,
+				65085F4B2DBE97E30010F35C /* Mobile Podometer AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65085F312DBE97DE0010F35C /* Mobile Podometer App */ = {
+			isa = PBXGroup;
+			children = (
+				65085F602DBE9C900010F35C /* Mobile-Podometer-App-Info.plist */,
+				65085F322DBE97DE0010F35C /* StepCounterApp.swift */,
+				65085F342DBE97DE0010F35C /* ContentView.swift */,
+				65085F382DBE97E20010F35C /* Assets.xcassets */,
+				65085F3A2DBE97E20010F35C /* Preview Content */,
+				65085F5E2DBE99560010F35C /* PedometerManager.swift */,
+			);
+			path = "Mobile Podometer App";
+			sourceTree = "<group>";
+		};
+		65085F3A2DBE97E20010F35C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				65085F3B2DBE97E20010F35C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		65085F442DBE97E20010F35C /* Mobile Podometer AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				65085F452DBE97E20010F35C /* Mobile_Podometer_AppTests.swift */,
+			);
+			path = "Mobile Podometer AppTests";
+			sourceTree = "<group>";
+		};
+		65085F4E2DBE97E30010F35C /* Mobile Podometer AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				65085F4F2DBE97E30010F35C /* Mobile_Podometer_AppUITests.swift */,
+				65085F512DBE97E30010F35C /* Mobile_Podometer_AppUITestsLaunchTests.swift */,
+			);
+			path = "Mobile Podometer AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65085F2E2DBE97DE0010F35C /* Mobile Podometer App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65085F552DBE97E30010F35C /* Build configuration list for PBXNativeTarget "Mobile Podometer App" */;
+			buildPhases = (
+				65085F2B2DBE97DE0010F35C /* Sources */,
+				65085F2C2DBE97DE0010F35C /* Frameworks */,
+				65085F2D2DBE97DE0010F35C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mobile Podometer App";
+			productName = "Mobile Podometer App";
+			productReference = 65085F2F2DBE97DE0010F35C /* Mobile Podometer App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65085F402DBE97E20010F35C /* Mobile Podometer AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65085F582DBE97E30010F35C /* Build configuration list for PBXNativeTarget "Mobile Podometer AppTests" */;
+			buildPhases = (
+				65085F3D2DBE97E20010F35C /* Sources */,
+				65085F3E2DBE97E20010F35C /* Frameworks */,
+				65085F3F2DBE97E20010F35C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65085F432DBE97E20010F35C /* PBXTargetDependency */,
+			);
+			name = "Mobile Podometer AppTests";
+			productName = "Mobile Podometer AppTests";
+			productReference = 65085F412DBE97E20010F35C /* Mobile Podometer AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65085F4A2DBE97E30010F35C /* Mobile Podometer AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65085F5B2DBE97E30010F35C /* Build configuration list for PBXNativeTarget "Mobile Podometer AppUITests" */;
+			buildPhases = (
+				65085F472DBE97E30010F35C /* Sources */,
+				65085F482DBE97E30010F35C /* Frameworks */,
+				65085F492DBE97E30010F35C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65085F4D2DBE97E30010F35C /* PBXTargetDependency */,
+			);
+			name = "Mobile Podometer AppUITests";
+			productName = "Mobile Podometer AppUITests";
+			productReference = 65085F4B2DBE97E30010F35C /* Mobile Podometer AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65085F272DBE97DE0010F35C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					65085F2E2DBE97DE0010F35C = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					65085F402DBE97E20010F35C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 65085F2E2DBE97DE0010F35C;
+					};
+					65085F4A2DBE97E30010F35C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 65085F2E2DBE97DE0010F35C;
+					};
+				};
+			};
+			buildConfigurationList = 65085F2A2DBE97DE0010F35C /* Build configuration list for PBXProject "Mobile Podometer App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65085F262DBE97DE0010F35C;
+			productRefGroup = 65085F302DBE97DE0010F35C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65085F2E2DBE97DE0010F35C /* Mobile Podometer App */,
+				65085F402DBE97E20010F35C /* Mobile Podometer AppTests */,
+				65085F4A2DBE97E30010F35C /* Mobile Podometer AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65085F2D2DBE97DE0010F35C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65085F3C2DBE97E20010F35C /* Preview Assets.xcassets in Resources */,
+				65085F392DBE97E20010F35C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65085F3F2DBE97E20010F35C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65085F492DBE97E30010F35C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65085F2B2DBE97DE0010F35C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65085F5F2DBE99560010F35C /* PedometerManager.swift in Sources */,
+				65085F352DBE97DE0010F35C /* ContentView.swift in Sources */,
+				65085F332DBE97DE0010F35C /* StepCounterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65085F3D2DBE97E20010F35C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65085F462DBE97E20010F35C /* Mobile_Podometer_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65085F472DBE97E30010F35C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65085F522DBE97E30010F35C /* Mobile_Podometer_AppUITestsLaunchTests.swift in Sources */,
+				65085F502DBE97E30010F35C /* Mobile_Podometer_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65085F432DBE97E20010F35C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65085F2E2DBE97DE0010F35C /* Mobile Podometer App */;
+			targetProxy = 65085F422DBE97E20010F35C /* PBXContainerItemProxy */;
+		};
+		65085F4D2DBE97E30010F35C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65085F2E2DBE97DE0010F35C /* Mobile Podometer App */;
+			targetProxy = 65085F4C2DBE97E30010F35C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		65085F532DBE97E30010F35C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65085F542DBE97E30010F35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65085F562DBE97E30010F35C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mobile Podometer App/Preview Content\"";
+				DEVELOPMENT_TEAM = FQQ9AL9DY8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mobile-Podometer-App-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alba.Mobile-Podometer-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65085F572DBE97E30010F35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mobile Podometer App/Preview Content\"";
+				DEVELOPMENT_TEAM = FQQ9AL9DY8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mobile-Podometer-App-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alba.Mobile-Podometer-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		65085F592DBE97E30010F35C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alba.Mobile-Podometer-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile Podometer App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mobile Podometer App";
+			};
+			name = Debug;
+		};
+		65085F5A2DBE97E30010F35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alba.Mobile-Podometer-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile Podometer App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mobile Podometer App";
+			};
+			name = Release;
+		};
+		65085F5C2DBE97E30010F35C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alba.Mobile-Podometer-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mobile Podometer App";
+			};
+			name = Debug;
+		};
+		65085F5D2DBE97E30010F35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alba.Mobile-Podometer-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mobile Podometer App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65085F2A2DBE97DE0010F35C /* Build configuration list for PBXProject "Mobile Podometer App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65085F532DBE97E30010F35C /* Debug */,
+				65085F542DBE97E30010F35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65085F552DBE97E30010F35C /* Build configuration list for PBXNativeTarget "Mobile Podometer App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65085F562DBE97E30010F35C /* Debug */,
+				65085F572DBE97E30010F35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65085F582DBE97E30010F35C /* Build configuration list for PBXNativeTarget "Mobile Podometer AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65085F592DBE97E30010F35C /* Debug */,
+				65085F5A2DBE97E30010F35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65085F5B2DBE97E30010F35C /* Build configuration list for PBXNativeTarget "Mobile Podometer AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65085F5C2DBE97E30010F35C /* Debug */,
+				65085F5D2DBE97E30010F35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65085F272DBE97DE0010F35C /* Project object */;
+}
