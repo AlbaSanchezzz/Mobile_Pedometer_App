@@ -2,7 +2,7 @@ import Foundation
 import CoreMotion
 import Combine
 
-/// Manages real and simulated step counting
+/// Manages real and simulated step counting, and persists reads into SQLite
 class PedometerManager: ObservableObject {
     private let pedometer = CMPedometer()
     private var timer: Timer?                // holds the simulation timer
@@ -15,9 +15,12 @@ class PedometerManager: ObservableObject {
         // Invalidate any existing timer first
         timer?.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
+            guard let self = self else { return }
             DispatchQueue.main.async {
-                self?.steps += 1
-                print("Simulated step count:", self?.steps ?? 0)
+                self.steps += 1
+                print("Simulated step count:", self.steps)
+                // Persist simulated count if you like:
+                DBManager.shared.insertStep(count: self.steps)
             }
         }
         #else
@@ -31,13 +34,16 @@ class PedometerManager: ObservableObject {
                 print("Pedometer error:", error.localizedDescription)
                 return
             }
-            guard let data = data else {
+            guard let self = self, let data = data else {
                 print("No data received in handler")
                 return
             }
+            let newCount = data.numberOfSteps.intValue
             DispatchQueue.main.async {
-                self?.steps = data.numberOfSteps.intValue
-                print("New step count:", data.numberOfSteps.intValue)
+                self.steps = newCount
+                print("New step count:", newCount)
+                // Persist the real count
+                DBManager.shared.insertStep(count: newCount)
             }
         }
         #endif
@@ -61,4 +67,3 @@ class PedometerManager: ObservableObject {
         startUpdates()
     }
 }
-

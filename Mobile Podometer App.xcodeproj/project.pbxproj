@@ -15,6 +15,9 @@
 		65085F502DBE97E30010F35C /* Mobile_Podometer_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65085F4F2DBE97E30010F35C /* Mobile_Podometer_AppUITests.swift */; };
 		65085F522DBE97E30010F35C /* Mobile_Podometer_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65085F512DBE97E30010F35C /* Mobile_Podometer_AppUITestsLaunchTests.swift */; };
 		65085F5F2DBE99560010F35C /* PedometerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65085F5E2DBE99560010F35C /* PedometerManager.swift */; };
+		65545CCC2DBECDB2008434C3 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 65545CCB2DBECDB2008434C3 /* SQLite */; };
+		65545CCF2DBECE34008434C3 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65545CCE2DBECE34008434C3 /* DBManager.swift */; };
+		65545CD12DBECF2E008434C3 /* MessagingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65545CD02DBECF2E008434C3 /* MessagingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,8 @@
 		65085F512DBE97E30010F35C /* Mobile_Podometer_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Podometer_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		65085F5E2DBE99560010F35C /* PedometerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerManager.swift; sourceTree = "<group>"; };
 		65085F602DBE9C900010F35C /* Mobile-Podometer-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Mobile-Podometer-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		65545CCE2DBECE34008434C3 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		65545CD02DBECF2E008434C3 /* MessagingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65545CCC2DBECDB2008434C3 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,7 @@
 		65085F262DBE97DE0010F35C = {
 			isa = PBXGroup;
 			children = (
+				65545CCD2DBECE07008434C3 /* Managers */,
 				65085F312DBE97DE0010F35C /* Mobile Podometer App */,
 				65085F442DBE97E20010F35C /* Mobile Podometer AppTests */,
 				65085F4E2DBE97E30010F35C /* Mobile Podometer AppUITests */,
@@ -132,6 +139,15 @@
 			path = "Mobile Podometer AppUITests";
 			sourceTree = "<group>";
 		};
+		65545CCD2DBECE07008434C3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				65545CCE2DBECE34008434C3 /* DBManager.swift */,
+				65545CD02DBECF2E008434C3 /* MessagingManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +164,9 @@
 			dependencies = (
 			);
 			name = "Mobile Podometer App";
+			packageProductDependencies = (
+				65545CCB2DBECDB2008434C3 /* SQLite */,
+			);
 			productName = "Mobile Podometer App";
 			productReference = 65085F2F2DBE97DE0010F35C /* Mobile Podometer App.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +239,9 @@
 				Base,
 			);
 			mainGroup = 65085F262DBE97DE0010F35C;
+			packageReferences = (
+				65545CCA2DBECDB2008434C3 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			productRefGroup = 65085F302DBE97DE0010F35C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -265,6 +287,8 @@
 				65085F5F2DBE99560010F35C /* PedometerManager.swift in Sources */,
 				65085F352DBE97DE0010F35C /* ContentView.swift in Sources */,
 				65085F332DBE97DE0010F35C /* StepCounterApp.swift in Sources */,
+				65545CD12DBECF2E008434C3 /* MessagingManager.swift in Sources */,
+				65545CCF2DBECE34008434C3 /* DBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65545CCA2DBECDB2008434C3 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65545CCB2DBECDB2008434C3 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65545CCA2DBECDB2008434C3 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 65085F272DBE97DE0010F35C /* Project object */;
 }
